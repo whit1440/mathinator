@@ -33,5 +33,6 @@ Where `operation` can be
 
 * Unit tests ([Mocha](https://mochajs.org) + [Chai](http://chaijs.com/) or maybe [should.js](https://github.com/shouldjs/should.js))
 * Better Error handling and error responses (following [HTTP Status Code Standards](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes))
+* Add a "swap" toggle to quickly switch operand positions.
 * [Swagger](https://swagger.io/specification/) spec for the API
 * [Docker](https://www.docker.com)-ize it
