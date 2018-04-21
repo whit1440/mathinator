@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Math Functions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="light-blue accent-3">
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <div class="container">
+        <div class="row center-align">
+            <div class="col s10 m6 offset-m3 offset-s1">
+                <div class="card" style="margin-bottom:3rem;">
+                    <div class="card-image">
+                        <div class="chalkboard"></div>
+                        <div class="card-title">
+                            <strong>Mathinator</strong>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="input-field inline">
+                            <input id="left_operand" type="number" class="validate">
+                            <label for="left_operand">Left Operand</label>
+                            <span class="helper-text" data-error="Must be a number" data-success="Great!"></span>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="right_operand" type="number" class="validate">
+                            <label for="right_operand">Right Operand</label>
+                            <span class="helper-text" data-error="Must be a number" data-success="Great!"></span>
+                        </div>
+                        <div class="fixed-action-btn" style="position: absolute;right: 23px;bottom: -25px;">
+                            <a class="btn-floating btn-large red">
+                                <i class="large material-icons">more_horiz</i>
+                              </a>
+                            <ul>
+                                <li><a class="btn-floating red" data-operation="add"><i class="material-icons text-icon">+</i></a></li>
+                                <li><a class="btn-floating yellow darken-1" data-operation="subtract"><i class="material-icons text-icon">-</i></a></li>
+                                <li><a class="btn-floating green" data-operation="multiply"><i class="material-icons">clear</i></a></li>
+                                <li><a class="btn-floating blue" data-operation="divide"><i class="material-icons text-icon">/</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Equation</th>
+                                    <th>Answer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- backup script incase code.jquery.com is down -->
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
